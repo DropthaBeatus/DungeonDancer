@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dungeondancer.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="heart" url="@AssetsForJava/heart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="health" layoutX="37.0" layoutY="7.0" prefHeight="31.0" prefWidth="34.0" text="HP" textAlignment="CENTER" />
+      <VBox alignment="TOP_CENTER" layoutX="188.0" layoutY="2.0" prefHeight="167.0" prefWidth="188.0">
+         <children>
+            <Label fx:id="monsterName" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="214.0" text="Monster" textAlignment="CENTER" wrapText="true" />
+      
+            <ImageView fx:id="monsterView" fitHeight="136.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image fx:id="monster" url="@AssetsForJava/slime.gif" />
+               </image>
+            </ImageView>
+          
+         </children>
+      </VBox>
+      <AnchorPane fx:id="padPane" layoutY="102.0" prefHeight="238.0" prefWidth="554.0">
+         <children>
+            <HBox layoutY="177.0" prefHeight="61.0" prefWidth="554.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleLeft" prefHeight="64.0" prefWidth="186.0" text="LeftButton" />
+                  <Button mnemonicParsing="false" onAction="#handleMid" prefHeight="64.0" prefWidth="186.0" text="MidButton" />
+                  <Button mnemonicParsing="false" onAction="#handleRight" prefHeight="64.0" prefWidth="186.0" text="RightButton" />
+               </children>
+            </HBox>
+            <Rectangle fx:id="leftRec" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="188.0" />
+            <Rectangle fx:id="midRec" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="190.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="181.0" />
+            <Rectangle fx:id="rightRec" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="371.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="188.0" />
+         </children></AnchorPane>
+     <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="360.0" layoutY="-14.0" />
+      <Button fx:id="tst" layoutX="71.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleOpen" text="Button" />
+    </children>
+</AnchorPane>
