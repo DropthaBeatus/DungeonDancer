@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dungeondancer.StartFXMLController">
+   <children>
+      <HBox layoutX="14.0" layoutY="289.0" prefHeight="38.0" prefWidth="394.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleThief" prefHeight="46.0" prefWidth="129.0" text="Thief" />
+            <Button mnemonicParsing="false" onAction="#handleWizard" prefHeight="49.0" prefWidth="135.0" text="Wizard" />
+            <Button mnemonicParsing="false" onAction="#handleKnight" prefHeight="70.0" prefWidth="131.0" text="Knight" />
+         </children>
+      </HBox>
+      <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name Here" textAlignment="CENTER" wrappingWidth="394.0" />
+      <TextField fx:id="textField" layoutX="14.0" layoutY="35.0" prefHeight="27.0" prefWidth="394.0" />
+      <TextArea layoutX="14.0" layoutY="76.0" prefHeight="193.0" prefWidth="394.0" text="ABOUT ME&#10;&#10;For easy grading and to confirm the write: Select the Wizard&#10;option so you do not die. End the song to save your highscore.&#10;Restart the application then your highscore should be recorded&#10;in the highscore.txt file&#10;&#10;This is Dungeon Dancer. Dungeon Dancer is a rythem based&#10;game where you select one of 3 classes: Knight, Wizard, or&#10;Thief. Before you start you have to enter your name for high&#10;score purposes and then select one of the three classes via &#10;button below. After that you will be loaded to the game page&#10;You start the game by clicking the song button and &#10;selecting a song from your folder. This will cause the game &#10;to start where circles will drop from the monster's location. &#10;The circles will descend and get close to the boxes below &#10;the control buttons. When the circle are touching or within &#10;the boxes click the corresponding buttons below. This will &#10;deal Damage to the monsters. WIth enough damage the &#10;monster will be destroyed and you will gain gold. With each&#10;consecutive kill you will gain more and more gold. This gold &#10;is how you can achieve a high score. If the cirlces pass the&#10;game box you will take damage. If you take enough damage &#10;the game will end and you might be able to hit the highscore&#10;list on the main page. &#10;&#10;Thief: Health - 7, Damage - 22, Gains 1 HP with every 10 &#10;kills&#10;Knight: Health - 15, Damage - 20&#10;Wizard: Health -5, Damage - 50" />
+      <TextArea fx:id="hsc" editable="false" layoutX="408.0" layoutY="35.0" prefHeight="293.0" prefWidth="147.0" />
+      <Label layoutX="439.0" layoutY="18.0" prefHeight="17.0" prefWidth="89.0" text="Highscores" />
+      <Label fx:id="Warning" alignment="CENTER" layoutX="15.0" layoutY="269.0" prefHeight="17.0" prefWidth="394.0" text="Enter Name First!" textFill="RED" />
+   </children>
+</AnchorPane>

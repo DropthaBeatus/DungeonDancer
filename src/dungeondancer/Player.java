@@ -9,11 +9,14 @@ package dungeondancer;
  *
  * @author beatus
  */
-public class Player {
+abstract class Player{
     
-    private int health;
-    private String name;
+    int health;
+    public String name;
     public int damage = 10;
+    protected int slainMonst = 1;
+    public int wealth = 0;
+
     
     public Player(){
         health = 3;
@@ -21,7 +24,7 @@ public class Player {
     }
     
     public Player(String name){
-        health = 3;
+        health = 5;
         this.name = name;
     }
     
@@ -37,5 +40,18 @@ public class Player {
         return String.valueOf(health);
     }
     
+    public void upSlain(int plunder){
+        this.wealth += plunder * slainMonst;
+        slainMonst += .1;
+    }
+    
+    public String getWealth(){
+        return String.valueOf(wealth);
+    }
+    public String getDamage(){
+        return String.valueOf(damage);
+        
+    }
+   
     
 }

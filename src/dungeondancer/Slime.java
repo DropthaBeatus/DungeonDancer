@@ -5,18 +5,15 @@
  */
 package dungeondancer;
 
-import javafx.scene.image.Image;
-
 /**
  *
  * @author beatus
  */
 public class Slime extends Monster implements AttackAudio{
-    
-    public String image = "@AssetsForJava/slime.gif";
-    
-    public Slime(){
-        super("Slime", 25);
+    //public String image = "@AssetsForJava/slime.gif";
+    public String name = "Slime";
+    public Slime(Player player){
+        super("Slime", 115, 7, player);
     }
 
     

@@ -1,0 +1,10 @@
+first 100
+second 50
+third 10
+fourth 6
+fifth 5
+sixth 4
+seventh 3
+eighth 2
+ninth 1
+tenth 0

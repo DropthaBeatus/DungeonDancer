@@ -13,10 +13,10 @@ import javafx.scene.image.Image;
  */
 public class Dragon extends Monster implements AttackAudio{
     
-    public String image ="@AssetsForJava/dragon.png";
-    
-    public Dragon(){
-        super("Dragon", 250); 
+   // public String image ="@AssetsForJava/dragon.png";
+    public String name = "Dragon";
+    public Dragon(Player player){
+        super("Dragon", 250, 50, player); 
     }
     
 }
